@@ -1,0 +1,17 @@
+{
+  "name": "cli-todo-ysws-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": ["Clis YSWS", "Example using javascript"],
+  "author": "Bruno Blaise",
+  "license": "ISC",
+  "description": "Example of using javascript build CLis Tools",
+  "dependencies": {
+    "@clack/prompts": "^0.8.2",
+    "cli-table": "^0.3.11"
+  }
+}
