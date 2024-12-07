@@ -75,13 +75,11 @@ func main() {
 	option(todo)
 
 }
-
 func init() {
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
 	go func() {
 		<-c
-		// Run Cleanup
 		os.Exit(1)
 	}()
 }
