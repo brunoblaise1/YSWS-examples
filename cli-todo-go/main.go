@@ -17,7 +17,6 @@ func getInput(r *bufio.Reader) (string, error) {
 	input, err := r.ReadString('\n')
 	return strings.TrimSpace(input), err
 }
-
 func createTodo() todo {
 	fmt.Print(Gray + "\n Enter a name of your todos: " + Gray)
 	reader := bufio.NewReader(os.Stdin)
@@ -59,7 +58,7 @@ func option(t todo) {
 		a.Success()
 		t.save()
 	default:
-		fmt.Println(Gray + "Please enter a valid option" + Gray)
+		fmt.Println(Red + "Please enter a valid option" + Red)
 		a := spinner.New("Starting again...")
 		a.Start()
 		time.Sleep(time.Second * 2)

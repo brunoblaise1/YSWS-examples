@@ -35,17 +35,19 @@ func (t *todo) AddTodo(name string, compl bool) {
 	t.todoArr[name] = compl
 }
 
+var chooseString string = Red + "No todo exist" + Red
+
 func (t *todo) choose(name string) string {
-	choose := Red + "No todo exist" + Red
+
 	for k := range t.todoArr {
 		if k != name {
-			fmt.Println(choose)
+			fmt.Println(chooseString)
 		} else {
-			choose = k
+			chooseString = k
 			t.todoArr[k] = true
 		}
 	}
-	return choose
+	return chooseString
 
 }
 
