@@ -1,0 +1,18 @@
+[package]
+name = "cli-todo-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bruno Blaise"]
+description = "An example of YSWS Example using Rust"
+readme = "README.md"
+homepage = "https://github.com/brunoblaise1/YSWS-examples"
+repository = "https://github.com/brunoblaise1/YSWS-examples"
+keywords = ["CLi YSWS", "example"]
+
+[dependencies]
+cli-table = "0.4.9"
+cliclack = "0.3.5"
+console = "0.15.8"
+ctrlc = "3.4.5"
+
+
