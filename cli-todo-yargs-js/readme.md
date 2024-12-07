@@ -1,4 +1,4 @@
-# CLi YSWS Example of using yargs using options
+# CLi Example of using yargs using options
 
 This is another example of using options while developing Cli tools to use this one you can use it in multpile ways.
 
