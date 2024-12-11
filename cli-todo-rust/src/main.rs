@@ -4,7 +4,7 @@ use std::{io, thread, time::Duration};
 
 use cli_table::{format::Justify, print_stdout, Cell, Style, Table};
 fn main() -> io::Result<()> {
-    // set two todos and keep them in an arry of string  be able to slect them mark them as done and diplay a table
+ 
     ctrlc::set_handler(move || {}).expect("Ctrl-c Handler");
     clear_screen()?;
     intro(style("Welcome to rust todo app").on_cyan().black())?;
@@ -73,3 +73,15 @@ fn main() -> io::Result<()> {
     outro(style("Thank you for turning in with us").on_green().black())?;
     Ok(())
 }
+
+
+/*
+ 
+
+ using a wasm-bindgen cli
+ wasm=pack
+ napi-rs
+
+TODO:`wasm-32-unkown-unknown `
+
+*/
